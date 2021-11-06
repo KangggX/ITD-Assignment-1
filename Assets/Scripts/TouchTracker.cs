@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class TouchTracker : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Touch _firstTouch;
+
+    private void Update()
     {
-        
+        StoreTouches();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void StoreTouches()
     {
-        
+        if (Input.GetMouseButton(0))
+        {
+            RaycastHit hit;
+
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
+            {
+                Debug.Log("First touch is at: " + Input.mousePosition);
+                //Debug.Log(_astronautPlaneStage);
+            }
+            else
+            {
+                return;
+            }
+
+            Debug.Log("hi");
+        }
     }
 }
