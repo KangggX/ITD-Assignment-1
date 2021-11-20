@@ -1,28 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
-[RequireComponent(typeof(BoxCollider))]
 public class InstrumentHandler : MonoBehaviour
 {
-    public InstrumentPart instrumentPart;
+    [SerializeField] private TextMeshProUGUI _debugText;
+    [SerializeField] private int _interactionCount;
+    public bool[] interactionCheckArray;
 
-    private Guitar _guitar;
-    private Drum _drum;
-    private Flute _flute;
-    private Keyboard _keyboard;
-
-    public void Interacted(int inputNum)
+    private void Awake()
     {
-        switch (instrumentPart)
-        {
-            case (InstrumentPart.GuitarNeck):
-                _guitar = GetComponentInParent<Guitar>();
-                return;
+        interactionCheckArray = new bool[_interactionCount];
+    }
 
-            case (InstrumentPart.GuitarString):
-                _guitar = GetComponentInParent<Guitar>();
-                return;
+    protected void Update()
+    {
+        if (interactionCheckArray[1])
+        {
+            _debugText.text = "true";
+        }
+        else
+        {
+            _debugText.text = "false";
         }
     }
 }

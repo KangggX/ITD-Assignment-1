@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class AudioManager : MonoBehaviour
 {
@@ -17,6 +19,16 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private GameObject _keyboardAudios;
     private List<AudioSource> _keyboardAudioList = new List<AudioSource>();
 
+    private void OnEnable()
+    {
+        Guitar.GuitarAudioEvent += PlayKeyboardAudio;
+    }
+
+    private void OnDisable()
+    {
+        Guitar.GuitarAudioEvent -= PlayKeyboardAudio;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,5 +42,6 @@ public class AudioManager : MonoBehaviour
     public void PlayKeyboardAudio()
     {
         int listCount = _keyboardAudioList.Count;
+        _keyboardAudioList[Random.Range(0, listCount - 1)].Play();
     }
 }
