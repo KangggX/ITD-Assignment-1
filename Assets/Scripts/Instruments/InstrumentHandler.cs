@@ -17,6 +17,9 @@ public class InstrumentHandler : MonoBehaviour
         switch (instrumentPart)
         {
             case (InstrumentPart.GuitarNeck):
+                _guitar = GetComponentInParent<Guitar>();
+                return;
+
             case (InstrumentPart.GuitarString):
                 _guitar = GetComponentInParent<Guitar>();
                 return;

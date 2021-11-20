@@ -72,6 +72,27 @@ public class TouchTracker : MonoBehaviour
                 return;
             }
 
+            if (Input.touchCount == 2)
+            {
+                _secondTouch = Input.GetTouch(1);
+                RaycastHit hit2;
+
+                if (Physics.Raycast(Camera.main.ScreenPointToRay(_secondTouch.position), out hit2))
+                {
+                    InstrumentHandler partHit = hit.collider.GetComponent<InstrumentHandler>();
+                    //Debug.Log(_astronautPlaneStage);
+
+                    if (partHit != null)
+                    {
+                        partHit.Interacted(1);
+                    }
+                }
+                else
+                {
+                    return;
+                }
+            }
+
             //if (Physics.Raycast(Camera.main.ScreenPointToRay(_secondTouch.position), out hit))
             //{
             //    InstrumentHandler partHit = hit.collider.GetComponent<InstrumentHandler>();
