@@ -9,7 +9,7 @@ public class ObjectRotation : MonoBehaviour
         float x = Input.GetAxis("Mouse X") * 1;
         float y = Input.GetAxis("Mouse Y") * 1;
 
-        transform.Rotate(Vector3.back, x);
-        transform.Rotate(Vector3.right, y);
+        transform.Rotate(Vector3.down, x, Space.World);
+        transform.Rotate(Vector3.right, y, Space.World);
     }
 }
