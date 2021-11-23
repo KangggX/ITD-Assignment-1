@@ -1,24 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuBtn : MonoBehaviour
 {
     public GameObject mainMenuUi;
-    public GameObject inGameUi;
     public GameObject settingsUi;
     public GameObject inGameMenuUi;
 
     public void OpenGame()
     {
-        mainMenuUi.SetActive(false);
-        inGameUi.SetActive(true);
+        SceneManager.LoadScene(1);
     }
 
     public void OpenSettings()
     {
         mainMenuUi.SetActive(false);
         settingsUi.SetActive(true);
+    }
+
+    public void CloseSetting()
+    {
+        mainMenuUi.SetActive(true);
+        settingsUi.SetActive(false);
     }
 
     public void OpenInGameMenu()
@@ -33,9 +38,7 @@ public class MenuBtn : MonoBehaviour
 
     public void BackToMainMenu()
     {
-        CloseInGameMenu();
-        mainMenuUi.SetActive(true);
-        inGameMenuUi.SetActive(false);
+        SceneManager.LoadScene(0);
     }
 
     public void QuitGame()
