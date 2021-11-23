@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Keyboard : InstrumentHandler
 {
-    public static event Action<int, InstrumentHandler> keyboardAudioEvent;
+    public static event Action<int, InstrumentHandler> keyboardAudioEvent; //Subscribed by AudioManager class
 
     protected override void Update()
     {

@@ -27,21 +27,7 @@ public class TouchTracker : MonoBehaviour
 
         //    if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
         //    {
-        //        InstrumentInteraction partHit = hit.collider.GetComponent<InstrumentInteraction>();
-        //        //Debug.Log(_astronautPlaneStage);
-
-        //        if (partHit != null)
-        //        {
-        //            Debug.Log("First touch is at: " + Input.mousePosition);
-        //            Debug.Log(partHit.instrumentPart);
-        //            partHit.Interacted(0);
-        //            _debugText.text = partHit.instrumentPart.ToString();
-        //        }
-        //    }
-        //    else
-        //    {
-        //        Debug.Log("released");
-        //        return;
+        //        Debug.Log(hit.collider.name);
         //    }
 
         //    //Debug.Log(Input.mousePosition);

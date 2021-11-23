@@ -25,12 +25,14 @@ public class AudioManager : MonoBehaviour
     private void OnEnable()
     {
         Guitar.guitarAudioEvent += PlayGuitarAudio;
+        Drum.drumAudioEvent += PlayDrumAudio;
         Keyboard.keyboardAudioEvent += PlayKeyboardAudio;
     }
 
     private void OnDisable()
     {
         Guitar.guitarAudioEvent -= PlayGuitarAudio;
+        Drum.drumAudioEvent -= PlayDrumAudio;
         Keyboard.keyboardAudioEvent -= PlayKeyboardAudio;
     }
 
@@ -41,6 +43,18 @@ public class AudioManager : MonoBehaviour
         for (int i = 0; i < _guitarAudios.GetComponents<AudioSource>().Length; i++)
         {
             _guitarAudioList.Add(_guitarAudios.GetComponents<AudioSource>()[i]);
+        }
+
+        // Adding Drum audio sources into a list (_drumAudioList)
+        for (int i = 0; i < _drumAudios.GetComponents<AudioSource>().Length; i++)
+        {
+            _drumAudioList.Add(_drumAudios.GetComponents<AudioSource>()[i]);
+        }
+
+        // Adding Flute audio sources into a list (_fluteAudioList)
+        for (int i = 0; i < _fluteAudios.GetComponents<AudioSource>().Length; i++)
+        {
+            _fluteAudioList.Add(_fluteAudios.GetComponents<AudioSource>()[i]);
         }
 
         // Adding Keyboard audio sources into a list (_keyboardAudioList)
@@ -61,13 +75,24 @@ public class AudioManager : MonoBehaviour
         iHandler.interactionCheckArray[1] = false; 
     }
 
-    public void PlayDrumAudio()
+    public void PlayDrumAudio(InstrumentHandler iHandler)
     {
+        // Play drum audio
+        _drumAudioList[0].Play();
 
+        // To ensure that music play once and player have to click the Drum again
+        iHandler.interactionCheckArray[0] = false;
     }
-    public void PlayFluteAudio()
-    {
 
+    public void PlayFluteAudio(InstrumentHandler iHandler)
+    {
+        int listCount = _fluteAudioList.Count;
+
+        // Play a random audio from the AudioList
+        _fluteAudioList[Random.Range(0, listCount - 1)].Play();
+
+        // To ensure that music play once and player have to click the Flute Key again
+        iHandler.interactionCheckArray[1] = false;
     }
 
     public void PlayKeyboardAudio(int index, InstrumentHandler iHandler)

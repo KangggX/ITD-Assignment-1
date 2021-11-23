@@ -36,8 +36,33 @@ public class InstrumentInteraction : MonoBehaviour
                 return;
 
             // Drum Enum
+            case (InstrumentPart.DrumHead):
+                _drum = GetComponentInParent<Drum>();
+
+                if (inputNum == 0)
+                {
+                    _drum.interactionCheckArray[0] = true;
+                }
+                return;
 
             // Flute Enum
+            case (InstrumentPart.FluteHole):
+                _flute = GetComponentInParent<Flute>();
+
+                if (inputNum == 0)
+                {
+                    _flute.interactionCheckArray[0] = true;
+                }
+                return;
+
+            case (InstrumentPart.FluteKey):
+                _flute = GetComponentInParent<Flute>();
+
+                if (inputNum == 1)
+                {
+                    _flute.interactionCheckArray[1] = true;
+                }
+                return;
 
             // Keyboard Enum
             case (InstrumentPart.KeyboardKey1):
@@ -130,8 +155,33 @@ public class InstrumentInteraction : MonoBehaviour
                 return;
 
             // Drum Enum
+            case (InstrumentPart.DrumHead):
+                _drum = GetComponentInParent<Drum>();
+
+                if (inputNum == 0)
+                {
+                    _drum.interactionCheckArray[0] = false;
+                }
+                return;
 
             // Flute Enum
+            case (InstrumentPart.FluteHole):
+                _flute = GetComponentInParent<Flute>();
+
+                if (inputNum == 0)
+                {
+                    _flute.interactionCheckArray[0] = false;
+                }
+                return;
+
+            case (InstrumentPart.FluteKey):
+                _flute = GetComponentInParent<Flute>();
+
+                if (inputNum == 1)
+                {
+                    _flute.interactionCheckArray[1] = false;
+                }
+                return;
 
             // Keyboard Enum
             case (InstrumentPart.KeyboardKey1):

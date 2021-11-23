@@ -6,9 +6,8 @@ public enum InstrumentPart
     GuitarNeck,
     GuitarString,
 
-    // Violin
-    ViolinBow,
-    ViolinString,
+    // Drum
+    DrumHead,
 
     // Flute
     FluteHole,

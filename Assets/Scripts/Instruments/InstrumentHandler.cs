@@ -16,13 +16,13 @@ public class InstrumentHandler : MonoBehaviour
 
     protected virtual void Update()
     {
-        if (interactionCheckArray[1])
-        {
-            _debugText.text = "true";
-        }
-        else
-        {
-            _debugText.text = "false";
-        }
+        //if (interactionCheckArray[1])
+        //{
+        //    _debugText.text = "true";
+        //}
+        //else
+        //{
+        //    _debugText.text = "false";
+        //}
     }
 }

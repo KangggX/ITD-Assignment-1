@@ -1,18 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Drum : MonoBehaviour
+public class Drum : InstrumentHandler
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static event Action<InstrumentHandler> drumAudioEvent; //Subscribed by AudioManager class
 
-    // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        
+        base.Update();
+
+        if (interactionCheckArray[0])
+        {
+            drumAudioEvent?.Invoke(gameObject.GetComponent<InstrumentHandler>());
+        }
     }
 }
