@@ -76,7 +76,7 @@ public class TouchTracker : MonoBehaviour
                     }
                     else
                     {
-                        return;
+                        break;
                     }
                     break;
 
@@ -99,10 +99,10 @@ public class TouchTracker : MonoBehaviour
 
                             if (partHit != null)
                             {
-                            currInstrumentPart = partHit.gameObject;
-                            _debugText.text = partHit.instrumentPart.ToString();
-                            _debugText2.text = "started";
-                            partHit.Interacted(1);
+                                currInstrumentPart = partHit.gameObject;
+                                _debugText.text = partHit.instrumentPart.ToString();
+                                _debugText2.text = "started";
+                                partHit.Interacted(1);
                             }
                         }
                         else

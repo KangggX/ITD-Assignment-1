@@ -21,12 +21,12 @@ public class AudioManager : MonoBehaviour
 
     private void OnEnable()
     {
-        Guitar.GuitarAudioEvent += PlayKeyboardAudio;
+        Guitar.guitarAudioEvent += PlayKeyboardAudio;
     }
 
     private void OnDisable()
     {
-        Guitar.GuitarAudioEvent -= PlayKeyboardAudio;
+        Guitar.guitarAudioEvent -= PlayKeyboardAudio;
     }
 
     // Start is called before the first frame update
