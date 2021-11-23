@@ -8,6 +8,7 @@ public class MenuBtn : MonoBehaviour
     public GameObject mainMenuUi;
     public GameObject settingsUi;
     public GameObject inGameMenuUi;
+    public GameObject inGameSettings;
 
     public void OpenGame()
     {
@@ -34,6 +35,15 @@ public class MenuBtn : MonoBehaviour
     public void CloseInGameMenu()
     {
         inGameMenuUi.SetActive(false);
+    }
+    public void OpenInGameSettings()
+    {
+        inGameSettings.SetActive(true);
+    }
+
+    public void CloseInGameSettings()
+    {
+        inGameSettings.SetActive(false);
     }
 
     public void BackToMainMenu()

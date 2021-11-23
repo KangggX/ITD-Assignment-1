@@ -16,6 +16,7 @@ public class InstrumentInteraction : MonoBehaviour
     {
         switch (instrumentPart)
         {
+            // Guitar things
             case (InstrumentPart.GuitarNeck):
                 _guitar = GetComponentInParent<Guitar>();
 
@@ -33,6 +34,28 @@ public class InstrumentInteraction : MonoBehaviour
                     _guitar.interactionCheckArray[inputNum] = true;
                 }
                 return;
+
+            // Keyboard things
+            case (InstrumentPart.KeyboardKey1):
+                break;
+
+            case (InstrumentPart.KeyboardKey2):
+                break;
+
+            case (InstrumentPart.KeyboardKey3):
+                break;
+
+            case (InstrumentPart.KeyboardKey4):
+                break;
+
+            case (InstrumentPart.KeyboardKey5):
+                break;
+
+            case (InstrumentPart.KeyboardKey6):
+                break;
+
+            case (InstrumentPart.KeyboardKey7):
+                break;
         }
     }
 
