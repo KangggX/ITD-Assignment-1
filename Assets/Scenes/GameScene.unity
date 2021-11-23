@@ -1483,7 +1483,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2095603926}
+  - {fileID: 2080279999}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4399,7 +4399,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &2095603926
+--- !u!21 &2080279999
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -4408,7 +4408,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 'GuitarTargetMaterial
 
-    16636'
+    16706'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
