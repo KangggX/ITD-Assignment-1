@@ -336,6 +336,7 @@ GameObject:
   - component: {fileID: 4703597174052978798}
   - component: {fileID: 2884851328715860607}
   - component: {fileID: 4865676712205285312}
+  - component: {fileID: 4608735175255669579}
   m_Layer: 0
   m_Name: polySurface3
   m_TagString: key1
@@ -419,6 +420,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.042042103, y: 0.051969297, z: 0.2781225}
   m_Center: {x: -0.0000000018626451, y: 0.000000007450581, z: 0.000000014901161}
+--- !u!114 &4608735175255669579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712673448365817334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c5044c1d8b76640be845b7033cf45d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instrumentPart: 7
 --- !u!1 &914881029511593288
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,6 +607,7 @@ GameObject:
   - component: {fileID: 6482966262487730379}
   - component: {fileID: 5604240862964944409}
   - component: {fileID: 4483520982929784166}
+  - component: {fileID: 1530657205086327763}
   m_Layer: 0
   m_Name: polySurface4
   m_TagString: key2
@@ -676,6 +691,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0420421, y: 0.051969297, z: 0.2781225}
   m_Center: {x: -0.0000000121071935, y: 0.000000007450581, z: 0.000000014901161}
+--- !u!114 &1530657205086327763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256297911318054971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c5044c1d8b76640be845b7033cf45d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instrumentPart: 8
 --- !u!1 &1294560992280418992
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +716,7 @@ GameObject:
   - component: {fileID: 1308048222188644130}
   - component: {fileID: 8554249513288352211}
   - component: {fileID: 4466985714454379254}
+  - component: {fileID: 4508647070563578029}
   m_Layer: 0
   m_Name: polySurface8
   m_TagString: key6
@@ -771,6 +800,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.042042077, y: 0.051969297, z: 0.2781225}
   m_Center: {x: 0, y: 0.000000007450581, z: 0.000000014901161}
+--- !u!114 &4508647070563578029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294560992280418992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c5044c1d8b76640be845b7033cf45d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instrumentPart: 12
 --- !u!1 &2337432056275962183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,6 +1204,7 @@ GameObject:
   - component: {fileID: 9140360441172591437}
   - component: {fileID: 3159872510999684150}
   - component: {fileID: 3816323240391620516}
+  - component: {fileID: 1544800004725831451}
   m_Layer: 0
   m_Name: polySurface6
   m_TagString: key4
@@ -1245,6 +1288,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04204209, y: 0.051969297, z: 0.2781225}
   m_Center: {x: -9.313226e-10, y: 0.000000007450581, z: 0.000000014901161}
+--- !u!114 &1544800004725831451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3432113929377017075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c5044c1d8b76640be845b7033cf45d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instrumentPart: 10
 --- !u!1 &3535000640737098850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1338,6 +1394,7 @@ GameObject:
   - component: {fileID: 391599710755324202}
   - component: {fileID: 413720514808742764}
   - component: {fileID: 3645836752326458592}
+  - component: {fileID: 4189546463295660391}
   m_Layer: 0
   m_Name: polySurface9
   m_TagString: key7
@@ -1421,6 +1478,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.042042084, y: 0.051969297, z: 0.2781225}
   m_Center: {x: 0.0000000027939677, y: 0.000000007450581, z: 0.000000014901161}
+--- !u!114 &4189546463295660391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3789510570164319590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c5044c1d8b76640be845b7033cf45d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instrumentPart: 13
 --- !u!1 &4010998452567222031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,6 +1584,7 @@ GameObject:
   - component: {fileID: 2115202519370704295}
   - component: {fileID: 1488233603177149032}
   - component: {fileID: 1406742407562267417}
+  - component: {fileID: 3304773582323281346}
   m_Layer: 0
   m_Name: polySurface7
   m_TagString: key5
@@ -1597,6 +1668,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.042042084, y: 0.051969297, z: 0.2781225}
   m_Center: {x: -9.313226e-10, y: 0.000000007450581, z: 0.000000014901161}
+--- !u!114 &3304773582323281346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4435797121946060229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c5044c1d8b76640be845b7033cf45d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instrumentPart: 11
 --- !u!1 &4577367073577506777
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,6 +2095,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6543689466665063244}
+  - component: {fileID: 1326200007044957361}
   m_Layer: 0
   m_Name: KeyBoard
   m_TagString: Untagged
@@ -2036,6 +2121,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1326200007044957361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5873831131232143862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 913d617c8dc21de498805fd3e5767c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _debugText: {fileID: 0}
+  _interactionCount: 7
+  interactionCheckArray: 
 --- !u!1 &5980373462908266795
 GameObject:
   m_ObjectHideFlags: 0
@@ -2895,6 +2995,7 @@ GameObject:
   - component: {fileID: 5669850387435302818}
   - component: {fileID: 2718905101183147697}
   - component: {fileID: 7753845075325848339}
+  - component: {fileID: 8797274238832374548}
   m_Layer: 0
   m_Name: polySurface5
   m_TagString: key3
@@ -2978,3 +3079,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.042042084, y: 0.051969297, z: 0.2781225}
   m_Center: {x: 0.0000000027939677, y: 0.000000007450581, z: 0.000000014901161}
+--- !u!114 &8797274238832374548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9205252744641133119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c5044c1d8b76640be845b7033cf45d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instrumentPart: 9

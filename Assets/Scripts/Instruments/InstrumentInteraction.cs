@@ -22,7 +22,7 @@ public class InstrumentInteraction : MonoBehaviour
 
                 if (inputNum == 0)
                 {
-                    _guitar.interactionCheckArray[inputNum] = true;
+                    _guitar.interactionCheckArray[0] = true;
                 }
                 return;
 
@@ -31,31 +31,73 @@ public class InstrumentInteraction : MonoBehaviour
 
                 if (inputNum == 1)
                 {
-                    _guitar.interactionCheckArray[inputNum] = true;
+                    _guitar.interactionCheckArray[1] = true;
                 }
                 return;
 
             // Keyboard things
             case (InstrumentPart.KeyboardKey1):
-                break;
+                _keyboard = GetComponentInParent<Keyboard>();
+
+                if (inputNum == 0)
+                {
+                    _keyboard.interactionCheckArray[0] = true;
+                }
+                return;
 
             case (InstrumentPart.KeyboardKey2):
-                break;
+                _keyboard = GetComponentInParent<Keyboard>();
+
+                if (inputNum == 0)
+                {
+                    _keyboard.interactionCheckArray[1] = true;
+                }
+                return;
 
             case (InstrumentPart.KeyboardKey3):
-                break;
+                _keyboard = GetComponentInParent<Keyboard>();
+
+                if (inputNum == 0)
+                {
+                    _keyboard.interactionCheckArray[2] = true;
+                }
+                return;
 
             case (InstrumentPart.KeyboardKey4):
-                break;
+                _keyboard = GetComponentInParent<Keyboard>();
+
+                if (inputNum == 0)
+                {
+                    _keyboard.interactionCheckArray[3] = true;
+                }
+                return;
 
             case (InstrumentPart.KeyboardKey5):
-                break;
+                _keyboard = GetComponentInParent<Keyboard>();
+
+                if (inputNum == 0)
+                {
+                    _keyboard.interactionCheckArray[4] = true;
+                }
+                return;
 
             case (InstrumentPart.KeyboardKey6):
-                break;
+                _keyboard = GetComponentInParent<Keyboard>();
+
+                if (inputNum == 0)
+                {
+                    _keyboard.interactionCheckArray[5] = true;
+                }
+                return;
 
             case (InstrumentPart.KeyboardKey7):
-                break;
+                _keyboard = GetComponentInParent<Keyboard>();
+
+                if (inputNum == 0)
+                {
+                    _keyboard.interactionCheckArray[6] = true;
+                }
+                return;
         }
     }
 

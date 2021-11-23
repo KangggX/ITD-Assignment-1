@@ -8,12 +8,15 @@ public class AudioManager : MonoBehaviour
 {
     [Header("Guitar Audio")]
     [SerializeField] private GameObject _guitarAudios;
+    private List<AudioSource> _guitarAudioList = new List<AudioSource>();
 
     [Header("Drum Audio")]
     [SerializeField] private GameObject _drumAudios;
+    private List<AudioSource> _drumAudioList = new List<AudioSource>();
 
     [Header("Flute Audio")]
     [SerializeField] private GameObject _fluteAudios;
+    private List<AudioSource> _fluteAudioList = new List<AudioSource>();
 
     [Header("Keyboard Audio")]
     [SerializeField] private GameObject _keyboardAudios;
