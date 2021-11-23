@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Keyboard : InstrumentHandler
 {
-    public static event Action<int> keyboardAudioEvent;
+    public static event Action<int, InstrumentHandler> keyboardAudioEvent;
 
     protected override void Update()
     {
@@ -15,7 +15,7 @@ public class Keyboard : InstrumentHandler
         {
             if (interactionCheckArray[i])
             {
-                keyboardAudioEvent?.Invoke(i);
+                keyboardAudioEvent?.Invoke(i, gameObject.GetComponent<InstrumentHandler>());
             }
         }
     }

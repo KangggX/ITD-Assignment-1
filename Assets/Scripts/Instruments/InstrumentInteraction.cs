@@ -16,7 +16,7 @@ public class InstrumentInteraction : MonoBehaviour
     {
         switch (instrumentPart)
         {
-            // Guitar things
+            // Guitar Enum
             case (InstrumentPart.GuitarNeck):
                 _guitar = GetComponentInParent<Guitar>();
 
@@ -35,7 +35,11 @@ public class InstrumentInteraction : MonoBehaviour
                 }
                 return;
 
-            // Keyboard things
+            // Drum Enum
+
+            // Flute Enum
+
+            // Keyboard Enum
             case (InstrumentPart.KeyboardKey1):
                 _keyboard = GetComponentInParent<Keyboard>();
 
@@ -105,6 +109,8 @@ public class InstrumentInteraction : MonoBehaviour
     {
         switch (instrumentPart)
         {
+
+            // Guitar Enum
             case (InstrumentPart.GuitarNeck):
                 _guitar = GetComponentInParent<Guitar>();
 
@@ -120,6 +126,74 @@ public class InstrumentInteraction : MonoBehaviour
                 if (inputNum == 1)
                 {
                     _guitar.interactionCheckArray[inputNum] = false;
+                }
+                return;
+
+            // Drum Enum
+
+            // Flute Enum
+
+            // Keyboard Enum
+            case (InstrumentPart.KeyboardKey1):
+                _keyboard = GetComponentInParent<Keyboard>();
+
+                if (inputNum == 0)
+                {
+                    _keyboard.interactionCheckArray[0] = false;
+                }
+                return;
+
+            case (InstrumentPart.KeyboardKey2):
+                _keyboard = GetComponentInParent<Keyboard>();
+
+                if (inputNum == 0)
+                {
+                    _keyboard.interactionCheckArray[1] = false;
+                }
+                return;
+
+            case (InstrumentPart.KeyboardKey3):
+                _keyboard = GetComponentInParent<Keyboard>();
+
+                if (inputNum == 0)
+                {
+                    _keyboard.interactionCheckArray[2] = false;
+                }
+                return;
+
+            case (InstrumentPart.KeyboardKey4):
+                _keyboard = GetComponentInParent<Keyboard>();
+
+                if (inputNum == 0)
+                {
+                    _keyboard.interactionCheckArray[3] = false;
+                }
+                return;
+
+            case (InstrumentPart.KeyboardKey5):
+                _keyboard = GetComponentInParent<Keyboard>();
+
+                if (inputNum == 0)
+                {
+                    _keyboard.interactionCheckArray[4] = false;
+                }
+                return;
+
+            case (InstrumentPart.KeyboardKey6):
+                _keyboard = GetComponentInParent<Keyboard>();
+
+                if (inputNum == 0)
+                {
+                    _keyboard.interactionCheckArray[5] = false;
+                }
+                return;
+
+            case (InstrumentPart.KeyboardKey7):
+                _keyboard = GetComponentInParent<Keyboard>();
+
+                if (inputNum == 0)
+                {
+                    _keyboard.interactionCheckArray[6] = false;
                 }
                 return;
         }

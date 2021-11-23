@@ -24,12 +24,14 @@ public class AudioManager : MonoBehaviour
 
     private void OnEnable()
     {
-        Guitar.guitarAudioEvent += PlayKeyboardAudio;
+        Guitar.guitarAudioEvent += PlayGuitarAudio;
+        Keyboard.keyboardAudioEvent += PlayKeyboardAudio;
     }
 
     private void OnDisable()
     {
-        Guitar.guitarAudioEvent -= PlayKeyboardAudio;
+        Guitar.guitarAudioEvent -= PlayGuitarAudio;
+        Keyboard.keyboardAudioEvent -= PlayKeyboardAudio;
     }
 
     // Start is called before the first frame update
@@ -42,9 +44,26 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayKeyboardAudio()
+    public void PlayGuitarAudio()
+    {
+
+    }
+
+    public void PlayDrumAudio()
+    {
+
+    }
+    public void PlayFluteAudio()
+    {
+
+    }
+
+    public void PlayKeyboardAudio(int index, InstrumentHandler iHandler)
     {
         int listCount = _keyboardAudioList.Count;
-        _keyboardAudioList[Random.Range(0, listCount - 1)].Play();
+        _keyboardAudioList[index].Play();
+        iHandler.interactionCheckArray[index] = false;
+
+        //_keyboardAudioList[Random.Range(0, listCount - 1)].Play();
     }
 }
