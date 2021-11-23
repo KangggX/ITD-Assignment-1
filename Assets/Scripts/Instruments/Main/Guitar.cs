@@ -5,15 +5,15 @@ using UnityEngine;
 
 public class Guitar : InstrumentHandler
 {
-    public static event Action GuitarAudioEvent; //Subscribed by AudioManager class
+    public static event Action guitarAudioEvent; //Subscribed by AudioManager class
 
-    private void Update()
+    protected override void Update()
     {
         base.Update();
 
         if (interactionCheckArray[0] && interactionCheckArray[1])
         {
-            GuitarAudioEvent?.Invoke();
+            guitarAudioEvent?.Invoke();
         }
     }
 }

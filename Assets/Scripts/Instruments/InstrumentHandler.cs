@@ -14,7 +14,7 @@ public class InstrumentHandler : MonoBehaviour
         interactionCheckArray = new bool[_interactionCount];
     }
 
-    protected void Update()
+    protected virtual void Update()
     {
         if (interactionCheckArray[1])
         {

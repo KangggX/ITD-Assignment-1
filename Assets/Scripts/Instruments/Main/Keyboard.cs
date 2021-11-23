@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Keyboard : MonoBehaviour
+public class Keyboard : InstrumentHandler
 {
+    public static event Action keyboardAudioEvent;
+
     // Start is called before the first frame update
     void Start()
     {
