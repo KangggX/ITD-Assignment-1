@@ -6,7 +6,12 @@ using UnityEngine;
 public class ObjectRotation : MonoBehaviour
 {
     public BoxCollider collider;
-    public bool canRotate;
+    public bool canRotate = false;
+
+    private void Start()
+    {
+        collider.enabled = canRotate;
+    }
 
     private void OnMouseDrag()
     {

@@ -1232,6 +1232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider: {fileID: 6571667537493551371}
+  canRotate: 0
 --- !u!1 &8774246249275513671
 GameObject:
   m_ObjectHideFlags: 0
