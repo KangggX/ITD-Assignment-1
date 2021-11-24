@@ -171,7 +171,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3648000441684698578}
+  - component: {fileID: 3756091588799929874}
   - component: {fileID: 2388854756311903284}
+  - component: {fileID: 2210397936623194857}
   m_Layer: 0
   m_Name: guitar_low
   m_TagString: Untagged
@@ -200,6 +202,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
+--- !u!65 &3756091588799929874
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4173602921099165544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 129.37, y: 54.95, z: 20}
+  m_Center: {x: -2.08, y: 110.9, z: 39.3}
 --- !u!114 &2388854756311903284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,6 +230,19 @@ MonoBehaviour:
   _debugText: {fileID: 0}
   _interactionCount: 2
   interactionCheckArray: 
+--- !u!114 &2210397936623194857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4173602921099165544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa0d936cd374914ea65440d63c364d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider: {fileID: 3756091588799929874}
 --- !u!1 &4527832347690673735
 GameObject:
   m_ObjectHideFlags: 0

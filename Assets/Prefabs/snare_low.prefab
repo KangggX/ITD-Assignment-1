@@ -90,7 +90,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1329797688043756527}
+  - component: {fileID: 3458653932895502486}
   - component: {fileID: 5844222149171165049}
+  - component: {fileID: -6910364506420332427}
   m_Layer: 0
   m_Name: snare_low
   m_TagString: Untagged
@@ -117,6 +119,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3458653932895502486
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819369996028707157}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 54, y: 30.7, z: 54.82}
+  m_Center: {x: 0, y: 123.68, z: 57.57}
 --- !u!114 &5844222149171165049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,6 +147,19 @@ MonoBehaviour:
   _debugText: {fileID: 0}
   _interactionCount: 1
   interactionCheckArray: 
+--- !u!114 &-6910364506420332427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819369996028707157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa0d936cd374914ea65440d63c364d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider: {fileID: 3458653932895502486}
 --- !u!1 &3210915310399900333
 GameObject:
   m_ObjectHideFlags: 0

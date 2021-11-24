@@ -1164,7 +1164,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7338275964045345462}
+  - component: {fileID: 6571667537493551371}
   - component: {fileID: 7399880054899818234}
+  - component: {fileID: -2709662945927755447}
   m_Layer: 0
   m_Name: Flute
   m_TagString: Untagged
@@ -1189,6 +1191,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6571667537493551371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7970557360895006732}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.06, y: 0.06, z: 0.7}
+  m_Center: {x: 0, y: 0.17, z: -0.05}
 --- !u!114 &7399880054899818234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1204,6 +1219,19 @@ MonoBehaviour:
   _debugText: {fileID: 0}
   _interactionCount: 2
   interactionCheckArray: 
+--- !u!114 &-2709662945927755447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7970557360895006732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa0d936cd374914ea65440d63c364d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider: {fileID: 6571667537493551371}
 --- !u!1 &8774246249275513671
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,7 +1326,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.030940136, y: 0.022158679, z: 0.26941362}
+  m_Size: {x: 0.04, y: 0.04, z: 0.26941362}
   m_Center: {x: 0, y: 0, z: -0.16349153}
 --- !u!114 &7208901953710103480
 MonoBehaviour:
