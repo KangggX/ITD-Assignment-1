@@ -26,6 +26,7 @@ public class AudioManager : MonoBehaviour
     {
         Guitar.guitarAudioEvent += PlayGuitarAudio;
         Drum.drumAudioEvent += PlayDrumAudio;
+        Flute.fluteAudioEvent += PlayFluteAudio;
         Keyboard.keyboardAudioEvent += PlayKeyboardAudio;
     }
 
@@ -33,6 +34,7 @@ public class AudioManager : MonoBehaviour
     {
         Guitar.guitarAudioEvent -= PlayGuitarAudio;
         Drum.drumAudioEvent -= PlayDrumAudio;
+        Flute.fluteAudioEvent -= PlayFluteAudio;
         Keyboard.keyboardAudioEvent -= PlayKeyboardAudio;
     }
 
