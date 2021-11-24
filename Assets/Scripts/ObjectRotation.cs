@@ -8,10 +8,6 @@ public class ObjectRotation : MonoBehaviour
     public BoxCollider collider;
     public bool canRotate = false;
 
-    private void Start()
-    {
-        collider.enabled = canRotate;
-    }
 
     private void OnMouseDrag()
     {
@@ -35,5 +31,9 @@ public class ObjectRotation : MonoBehaviour
             canRotate = !canRotate;
             collider.enabled = canRotate;
         }
+    }
+    private void Update()
+    {
+        collider.enabled = canRotate;
     }
 }
