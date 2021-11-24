@@ -8,7 +8,12 @@ public class ObjectRotation : MonoBehaviour
     public BoxCollider collider;
     public bool canRotate = false;
 
+    private void Update()
+    {
+        collider.enabled = canRotate;
+    }
 
+    // Detects if user is dragging the collider. if true, they can rotate the object based on the axis
     private void OnMouseDrag()
     {
         float x = Input.GetAxis("Mouse X") * 1;
@@ -18,6 +23,7 @@ public class ObjectRotation : MonoBehaviour
         transform.Rotate(Vector3.right, y, Space.World);
     }
 
+    // Activates object rotation
     public void ActivateRotation()
     {
         // if canRotate == true
@@ -31,9 +37,5 @@ public class ObjectRotation : MonoBehaviour
             canRotate = !canRotate;
             collider.enabled = canRotate;
         }
-    }
-    private void Update()
-    {
-        collider.enabled = canRotate;
     }
 }
