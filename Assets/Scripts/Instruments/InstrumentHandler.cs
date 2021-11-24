@@ -16,5 +16,6 @@ public class InstrumentHandler : MonoBehaviour
 
     protected virtual void Update()
     {
+        Debug.Log("test");
     }
 }

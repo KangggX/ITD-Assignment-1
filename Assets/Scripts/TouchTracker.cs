@@ -9,9 +9,6 @@ public class TouchTracker : MonoBehaviour
     private Touch _secondTouch;
     private bool _canRotate = false;
 
-    [SerializeField] private TextMeshProUGUI _debugText;
-    [SerializeField] private TextMeshProUGUI _debugText2;
-
     private GameObject currInstrumentPart;
 
     private void Update()
@@ -51,13 +48,11 @@ public class TouchTracker : MonoBehaviour
                             //Debug.Log("First touch is at: " + Input.mousePosition);
                             //Debug.Log(instrumentPartHit.instrumentPart);
                             currInstrumentPart = partHit.gameObject;
-                            _debugText.text = partHit.instrumentPart.ToString();
-                            _debugText2.text = "started";
                             partHit.Interacted(0);
                         }
                         else if (partHit == null)
                         {
-                            _debugText.text = "error";
+                            Debug.Log("error");
                         }
                     }
                     else
@@ -68,7 +63,6 @@ public class TouchTracker : MonoBehaviour
 
                 case (TouchPhase.Ended):
                     currInstrumentPart.GetComponent<InstrumentInteraction>().Released(0);
-                    _debugText2.text = "ended";
                     break;
             }
 
@@ -86,8 +80,6 @@ public class TouchTracker : MonoBehaviour
                             if (partHit != null)
                             {
                                 currInstrumentPart = partHit.gameObject;
-                                _debugText.text = partHit.instrumentPart.ToString();
-                                _debugText2.text = "started";
                                 partHit.Interacted(1);
                             }
                         }
@@ -100,7 +92,6 @@ public class TouchTracker : MonoBehaviour
 
                     case (TouchPhase.Ended):
                         currInstrumentPart.GetComponent<InstrumentInteraction>().Released(1);
-                        _debugText2.text = "ended";
                         break;
                 }
         }
